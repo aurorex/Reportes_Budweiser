@@ -1,4 +1,4 @@
-google.charts.load('current', {packages: ['corechart', 'bar']});
+/*google.charts.load('current', {packages: ['corechart', 'bar']});
 google.charts.setOnLoadCallback(drawMultSeries);
 
 function drawMultSeries() {
@@ -8,35 +8,52 @@ function drawMultSeries() {
   data.addColumn('number', 'Tablet');
 
   data.addRows([
-    [{v: [8, 0, 0], f: '8 am'}, 1, .25],
-    [{v: [9, 0, 0], f: '9 am'}, 2, .5],
-    [{v: [10, 0, 0], f:'10 am'}, 3, 1],
-    [{v: [11, 0, 0], f: '11 am'}, 4, 2.25],
-    [{v: [12, 0, 0], f: '12 pm'}, 5, 2.25],
-    [{v: [13, 0, 0], f: '1 pm'}, 6, 3],
-    [{v: [14, 0, 0], f: '2 pm'}, 7, 4],
-    [{v: [15, 0, 0], f: '3 pm'}, 8, 5.25],
-    [{v: [16, 0, 0], f: '4 pm'}, 9, 7.5],
-    [{v: [17, 0, 0], f: '5 pm'}, 10, 10],
+    [{v: [8, 0, 0], f: 'Android'}, 1, .25],
+    [{v: [9, 0, 0], f: 'IOS'}, 2, .5],
   ]);
 
   var options = {
-    title: 'Motivation and Energy Level Throughout the Day',
+    title: 'Uso del App por dispositivo',
     hAxis: {
-      title: 'Time of Day',
-      format: 'h:mm a',
-      viewWindow: {
-        min: [7, 30, 0],
-        max: [17, 30, 0]
-      }
+      title: 'Tipo de Dispositivos',
+      
     },
     vAxis: {
-      title: 'Rating (scale of 1-10)'
-    }
+      title: 'Cantidad de Usuarios (xk)'
+    },
+    'width':800,
+    'height':400
   };
 
   var chart = new google.visualization.ColumnChart(
     document.getElementById('chart_div'));
 
   chart.draw(data, options);
-}
+}*/
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBarColors);
+
+function drawBarColors() {
+      var data = google.visualization.arrayToDataTable([
+        ['Tipo de Dispositivo', 'Tablet', 'Celular'],
+        ['Android', 817000, 800000],
+        ['IOS', 379200, 369400],
+      ]);
+
+      var options = {
+        title: 'Distribucion de uso de la app por tipo de dispositivo',
+        chartArea: {width: '50%'},
+        colors: ['#b0120a', '#ffab91'],
+        hAxis: {
+          title: 'Distribucion del Uso del App por tipo de dispositivo',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Tipo de Dispositivo'
+        },
+        'width':800,
+        'height':400
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
