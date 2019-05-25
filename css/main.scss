@@ -1,0 +1,44 @@
+/**WP 2019 weps84@gmail.com**/
+
+html {
+	body {
+		background-color: #DD1731;
+		width: 1024px;
+		margin: 0 auto;
+		h1, h2 {
+			text-align: center;
+			color: white;
+		}
+		.logo {
+			text-align: center;
+			img {
+				width: 30%;
+			}
+		}
+
+		.menu-section {
+			ul {
+				list-style-type: none;
+				margin-left: 0;
+				padding-left: 0;
+				li{
+					margin-top: 5px;
+					a{
+						display: block;
+						padding: 10px;
+						color: white;
+						border-radius: 5px;
+						border: 1px solid white;
+						text-align: center;
+						font-weight: bold;
+						&:hover{
+							text-decoration: none;
+							background-color: white;
+							color: #DD1731
+						}
+					}
+				}
+			}
+		}
+	}
+}
