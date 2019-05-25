@@ -1,0 +1,32 @@
+/**WP 2019 weps84@gmail.com**/
+html body {
+  background-color: #DD1731;
+  width: 1024px;
+  margin: 0 auto; }
+  html body h1, html body h2 {
+    text-align: center;
+    color: white; }
+  html body .logo {
+    text-align: center; }
+    html body .logo img {
+      width: 30%; }
+  html body .menu-section ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0; }
+    html body .menu-section ul li {
+      margin-top: 5px; }
+      html body .menu-section ul li a {
+        display: block;
+        padding: 10px;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid white;
+        text-align: center;
+        font-weight: bold; }
+        html body .menu-section ul li a:hover {
+          text-decoration: none;
+          background-color: white;
+          color: #DD1731; }
+
+/*# sourceMappingURL=main.css.map */
