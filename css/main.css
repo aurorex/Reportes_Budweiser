@@ -27,6 +27,10 @@ html body {
         padding: 5px; }
         html body ul.report-list li .image img {
           max-width: 100%; }
+  html body table tr td {
+    text-align: center; }
+    html body table tr td.google-visualization-table-type-number {
+      text-align: center !important; }
   html body .menu-section ul {
     list-style-type: none;
     margin-left: 0;

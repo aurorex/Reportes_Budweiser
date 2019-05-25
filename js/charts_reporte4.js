@@ -3,15 +3,21 @@
 
       function drawTable() {
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Nombre');
-        data.addColumn('string', 'Genero');
-        data.addColumn('number', 'Edad');
-        data.addColumn('boolean', 'Frecuencia');
+        data.addColumn('string', 'Edad');
+        data.addColumn('number', 'Frecuencia %');
+
         data.addRows([
-          ['Lucas', 'Varón',  {v: 10000, f: '28'}, true],
-          ['Elena', 'Mujer',  {v:8000,   f: '25'},  false],
-          ['Sara', 'Mujer',  {v:8000,   f: '25'},  true],
-          ['Diego', 'varón',  {v:8000,   f: '30'},  false],
+          [  '<22', {f:'10'}],
+          [  '22', {f:'8'}],
+          [  '23', {f:'8'}],
+          [  '24', {f:'8'}],
+          [  '25', {f:'8'}],
+          [  '26', {f:'8'}],
+          [  '27', {f:'8'}],
+          [  '28', {f:'8'}],
+          [  '29', {f:'8'}],
+          [  '30', {f:'8'}],
+          [ '>30', {f:'8'}],
 
         ]);
 
