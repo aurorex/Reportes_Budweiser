@@ -16,6 +16,35 @@ html {
 			}
 		}
 
+
+			ul.report-list {
+				list-style-type: none;
+				margin-left: 0;
+				padding-left: 0;
+				
+
+				li{
+					display: inline-block;
+					width: 23%;
+					margin: 5px;
+					border-radius: 5px;
+					border: 1px solid white;
+					-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+					-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+					box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+					
+					.image {
+						padding: 5px;
+						img {
+							max-width: 100%;
+							a {
+
+							}
+						}
+					}
+				}
+			}
+		
 		.menu-section {
 			ul {
 				list-style-type: none;
