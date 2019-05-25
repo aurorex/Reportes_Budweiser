@@ -3,9 +3,9 @@ google.charts.setOnLoadCallback(drawMultSeries);
 
 function drawMultSeries() {
   var data = new google.visualization.DataTable();
-  data.addColumn('timeofday', 'Time of Day');
-  data.addColumn('number', 'Motivation Level');
-  data.addColumn('number', 'Energy Level');
+  data.addColumn('timeofday', 'tiempo por Día');
+  data.addColumn('number', 'Movil');
+  data.addColumn('number', 'Tablet');
 
   data.addRows([
     [{v: [8, 0, 0], f: '8 am'}, 1, .25],
